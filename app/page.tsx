@@ -245,7 +245,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-sm text-slate-500">Telefon</div>
-                  <div className="mt-1 text-base font-medium">05XX XXX XX XX</div>
+                  <div className="mt-1 text-base font-medium">0537 648 14 24</div>
                 </div>
                 <div>
                   <div className="text-sm text-slate-500">Hizmet Alanları</div>
