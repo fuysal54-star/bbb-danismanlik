@@ -480,7 +480,7 @@ export default function Home() {
               İletişim
             </div>
             <div className="mt-4 space-y-3 text-sm text-slate-300">
-              <div>0537 648 14 24</div>
+              <div>0 537 648 14 24</div>
               <div>info@bbbdanismanlik.com</div>
               <div>İstanbul, Türkiye</div>
             </div>
