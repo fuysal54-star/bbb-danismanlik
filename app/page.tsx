@@ -204,7 +204,7 @@ export default function Home() {
             <div className="relative flex items-center justify-center">
               <div className="absolute inset-x-6 bottom-6 h-20 rounded-full bg-cyan-400/20 blur-2xl" />
 
-              <div className="absolute left-0 -top-16 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
+              <div className="absolute left-0 -top-18 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
                 <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
                   Hasta Analitiği
                 </div>
