@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Activity,
@@ -17,6 +19,30 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * -4;
+    const rotateY = ((x - centerX) / centerX) * 4;
+
+    card.style.setProperty("--mx", `${x}px`);
+    card.style.setProperty("--my", `${y}px`);
+    card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    card.style.transform =
+      "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0px)";
+  };
+
   const services = [
     {
       icon: BarChart3,
@@ -204,36 +230,45 @@ export default function Home() {
             <div className="relative flex min-h-[520px] items-center justify-center lg:justify-end">
               <div className="absolute inset-x-10 bottom-14 h-20 rounded-full bg-cyan-400/20 blur-2xl" />
 
-              {/* Hasta Analitiği */}
-              <div className="absolute left-6 top-2 z-20 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:left-8">
+              <div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                className="premium-card absolute left-6 top-2 z-20 hidden w-52 animate-float rounded-3xl border border-cyan-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:left-8"
+              >
                 <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
                   Hasta Analitiği
                 </div>
                 <div className="mt-3 flex h-20 items-end gap-2">
                   {[40, 60, 50, 72, 66, 84].map((h, i) => (
-                  <div
-                  key={i}
-                    className="flex-1 rounded-t-md bg-gradient-to-t from-cyan-500 to-blue-400"
-                    style={{ height: `${h}%` }}
-                   />
+                    <div
+                      key={i}
+                      className="flex-1 rounded-t-md bg-gradient-to-t from-cyan-500 to-blue-400"
+                      style={{ height: `${h}%` }}
+                    />
                   ))}
                 </div>
-               </div>
-
-              {/* Ana Logo Kartı */}
-              <div className="relative z-10 scale-95 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl">
-                <Image
-                src="/logo.png"
-                alt="BBB Danışmanlık Logo"
-                width={640}
-                height={640}
-                className="h-auto w-[190px] sm:w-[260px] lg:w-[340px] xl:w-[360px] drop-shadow-[0_10px_30px_rgba(34,211,238,0.2)]"
-                priority
-              />
               </div>
 
-              {/* Büyüme Trend */}
-              <div className="absolute right-12 top-44 z-30 hidden w-56 rounded-3xl border border-orange-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:-right-8">
+              <div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                className="premium-card relative z-10 scale-95 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl"
+              >
+                <Image
+                  src="/logo.png"
+                  alt="BBB Danışmanlık Logo"
+                  width={640}
+                  height={640}
+                  className="h-auto w-[190px] sm:w-[260px] lg:w-[340px] xl:w-[360px] drop-shadow-[0_10px_30px_rgba(34,211,238,0.2)]"
+                  priority
+                />
+              </div>
+
+              <div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                className="premium-card absolute right-16 top-20 z-30 hidden w-56 animate-float-slow rounded-3xl border border-orange-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:-right-8"
+              >
                 <div className="text-xs uppercase tracking-[0.24em] text-orange-300">
                   Büyüme Trend
                 </div>
@@ -243,12 +278,12 @@ export default function Home() {
                       key={i}
                       className="flex-1 rounded-t-md bg-gradient-to-t from-orange-500 to-amber-300"
                       style={{ height: `${h}%` }}
-                     />
-                    ))}
-                  </div>
+                    />
+                  ))}
                 </div>
               </div>
-            </div>  
+            </div>
+          </div>
         </section>
 
         <section id="hizmetler" className="bg-white py-20">
