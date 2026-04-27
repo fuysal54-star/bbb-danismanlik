@@ -152,7 +152,7 @@ export default function Home() {
                 VERİ • STRATEJİ • BÜYÜME
               </div>
 
-              <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
+              <h1 className="max-w-3xl text-3xl font-bold leading-tight md:text-5xl">
                 Sağlıkta verimliliği artıran,
                 <span className="block bg-gradient-to-r from-cyan-300 to-cyan-500 bg-clip-text text-transparent">
                   gelir kayıplarını azaltan
