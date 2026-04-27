@@ -16,6 +16,8 @@ import {
   Target,
   TrendingUp,
   Users,
+  Monitor,
+  Settings,
 } from "lucide-react";
 
 export default function Home() {
@@ -68,6 +70,19 @@ export default function Home() {
       description:
         "Kurumun ölçülebilir hedeflere ulaşmasını sağlayan dashboard, analiz ve takip modelleri kurguluyoruz.",
     },
+    {
+      icon: Monitor, // yeni import ekleyeceğiz
+      title: "Sağlık Yazılım Sistemleri",
+      description:
+        "HBYS, veri analitiği, dashboard ve entegrasyon çözümleri ile sağlık kurumlarına özel yazılım altyapıları tasarlıyoruz.",
+    },
+    {
+      icon: Settings, // yeni import
+      title: "HBYS Süreç ve Yazılım Danışmanlığı",
+      description:
+       "HBYS süreç analizi, modül optimizasyonu, kullanıcı deneyimi ve sistem verimliliğini artıran danışmanlık hizmetleri sunuyoruz.",
+    },
+
   ];
 
   const reasons = [
