@@ -205,7 +205,7 @@ export default function Home() {
               <div className="absolute inset-x-10 bottom-14 h-20 rounded-full bg-cyan-400/20 blur-2xl" />
 
               {/* Hasta Analitiği */}
-              <div className="absolute left-2 top-6 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:left-8">
+              <div className="absolute left-6 top-2 z-20 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:left-8">
                 <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
                   Hasta Analitiği
                 </div>
@@ -221,7 +221,7 @@ export default function Home() {
                </div>
 
               {/* Ana Logo Kartı */}
-              <div className="relative z-10 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+              <div className="relative z-10 scale-95 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl">
                 <Image
                 src="/logo.png"
                 alt="BBB Danışmanlık Logo"
@@ -233,7 +233,7 @@ export default function Home() {
               </div>
 
               {/* Büyüme Trend */}
-              <div className="absolute right-0 top-40 z-20 hidden w-56 rounded-3xl border border-orange-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:-right-8">
+              <div className="absolute right-12 top-44 z-30 hidden w-56 rounded-3xl border border-orange-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:-right-8">
                 <div className="text-xs uppercase tracking-[0.24em] text-orange-300">
                   Büyüme Trend
                 </div>
