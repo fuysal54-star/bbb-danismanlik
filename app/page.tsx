@@ -225,7 +225,7 @@ export default function Home() {
                   alt="BBB Danışmanlık Logo"
                   width={640}
                   height={640}
-                  className="h-auto w-[280px] drop-shadow-[0_15px_45px_rgba(34,211,238,0.25)] sm:w-[360px] lg:w-[460px]"
+                  className="h-auto w-[200px] sm:w-[280px] lg:w-[360px] drop-shadow-[0_10px_30px_rgba(34,211,238,0.2)]"
                   priority
                 />
               </div>
