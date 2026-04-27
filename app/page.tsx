@@ -248,6 +248,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>  
         </section>
 
         <section id="hizmetler" className="bg-white py-20">
