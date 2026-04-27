@@ -204,7 +204,7 @@ export default function Home() {
             <div className="relative flex items-center justify-center">
               <div className="absolute inset-x-6 bottom-6 h-20 rounded-full bg-cyan-400/20 blur-2xl" />
 
-              <div className="absolute left-0 -top-18 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
+              <div className="absolute -left-8 -top-24 hidden w-52 rounded-3xl border border-cyan-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
                 <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
                   Hasta Analitiği
                 </div>
@@ -225,12 +225,12 @@ export default function Home() {
                   alt="BBB Danışmanlık Logo"
                   width={640}
                   height={640}
-                  className="h-auto w-[200px] sm:w-[280px] lg:w-[360px] drop-shadow-[0_10px_30px_rgba(34,211,238,0.2)]"
+                  className="h-auto w-[190px] sm:w-[260px] lg:w-[340px] drop-shadow-[0_10px_30px_rgba(34,211,238,0.2)]"
                   priority
                 />
               </div>
 
-              <div className="absolute right-0 top-16 hidden w-56 rounded-3xl border border-orange-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
+              <div className="absolute -right-14 top-20 hidden w-56 rounded-3xl border border-orange-400/15 bg-[#0a234d]/80 p-4 shadow-2xl backdrop-blur lg:block">
                 <div className="text-xs uppercase tracking-[0.24em] text-orange-300">
                   Büyüme Trend
                 </div>
