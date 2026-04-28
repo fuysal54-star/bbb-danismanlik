@@ -541,12 +541,12 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   {[
-                    "Mali işler ekipleri",
-                    "Faturalama birimleri",
-                    "Hasta kabul ekipleri",
-                    "Anlaşmalı kurum ekipleri",
-                    "Yönetim kadroları",
-                    "Hekim hakediş ekipleri",
+                    "Mali İşler Ekipleri",
+                    "Faturalama Birimleri",
+                    "Hasta Kabul Ekipleri",
+                    "Anlaşmalı Kurum Ekipleri",
+                    "Yönetim Kadroları",
+                    "Hekim Hakediş Ekipleri",
                   ].map((item) => (
                     <span
                       key={item}
