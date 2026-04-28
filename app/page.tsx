@@ -504,8 +504,8 @@ export default function Home() {
           <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl" />
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-              <div>
+            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+              <div className="lg:sticky lg:top-28 lg:pt-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-300">
                   Eğitim Programlarımız
                 </p>
