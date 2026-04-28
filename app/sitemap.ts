@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: "https://bbb-danismanlik.vercel.app",
+      url: "https://bbbdanismanlik.com.tr",
       lastModified: new Date(),
     },
   ];
