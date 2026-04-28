@@ -22,6 +22,14 @@ import {
   ClipboardCheck,
   Gauge,
   AlertTriangle,
+  GraduationCap,
+  FileSearch,
+  DollarSign,
+  Building2,
+  Calculator,
+  Handshake,
+  ClipboardList,
+  ReceiptText,
 } from "lucide-react";
 
 export default function Home() {
@@ -75,18 +83,110 @@ export default function Home() {
         "Kurumun ölçülebilir hedeflere ulaşmasını sağlayan dashboard, analiz ve takip modelleri kurguluyoruz.",
     },
     {
-      icon: Monitor, // yeni import ekleyeceğiz
+      icon: Monitor,
       title: "Sağlık Yazılım Sistemleri",
       description:
         "HBYS, veri analitiği, dashboard ve entegrasyon çözümleri ile sağlık kurumlarına özel yazılım altyapıları tasarlıyoruz.",
     },
     {
-      icon: Settings, // yeni import
+      icon: Settings,
       title: "HBYS Süreç ve Yazılım Danışmanlığı",
       description:
-       "HBYS süreç analizi, modül optimizasyonu, kullanıcı deneyimi ve sistem verimliliğini artıran danışmanlık hizmetleri sunuyoruz.",
+        "HBYS süreç analizi, modül optimizasyonu, kullanıcı deneyimi ve sistem verimliliğini artıran danışmanlık hizmetleri sunuyoruz.",
     },
+    {
+      icon: GraduationCap,
+      title: "Medikal Muhasebe Eğitimi",
+      description:
+        "Sağlık kurumlarında gelir, tahakkuk, fatura, kurum anlaşmaları ve mali süreçlerin doğru yönetilmesine yönelik uygulamalı eğitimler sunuyoruz.",
+    },
+    {
+      icon: FileSearch,
+      title: "Medula ve Özel Hastane Faturalama Eğitimi",
+      description:
+        "Hasta kabulden provizyon, işlem kontrolü, tahakkuk ve fatura kapanışına kadar özel hastane Medula süreçlerini detaylı şekilde ele alıyoruz.",
+    },
+    {
+      icon: Handshake,
+      title: "Anlaşmalı Kurum ve Özel Sigorta Süreçleri",
+      description:
+        "Özel sağlık sigortası, TSS, kurum protokolleri, provizyon, teminat kontrolü ve red süreçlerinde operasyonel eğitimler veriyoruz.",
+    },
+  ];
 
+  const educationPrograms = [
+    {
+      icon: GraduationCap,
+      title: "Medikal Muhasebe Eğitimi",
+      description:
+        "Özel hastanelerde gelir kalemleri, tahakkuk mantığı, hasta türü bazlı finansal süreçler, kurum anlaşmaları ve faturalama akışını uygulamalı örneklerle anlatıyoruz.",
+      items: [
+        "Tahakkuk, reel fatura ve gelir takibi",
+        "Hasta türü bazlı gelir yönetimi",
+        "Fatura öncesi kontrol listeleri",
+        "Finans ve operasyon ekipleri için ortak süreç dili",
+      ],
+    },
+    {
+      icon: ReceiptText,
+      title: "Özel Hastane Medula Faturalama Süreçleri",
+      description:
+        "Medula sisteminde hasta kabul, provizyon, hizmet kaydı, takip, işlem uygunluğu, paket kontrolü ve fatura kapanış süreçlerini uçtan uca değerlendiriyoruz.",
+      items: [
+        "Medula takip ve provizyon süreçleri",
+        "SUT uyumluluk kontrolleri",
+        "Paket işlem ve hizmet başı ayrımı",
+        "Eksik işlem, hatalı takip ve red riskleri",
+      ],
+    },
+    {
+      icon: DollarSign,
+      title: "Fiyatlandırma, SUT ve Gelir Optimizasyonu",
+      description:
+        "SUT fiyat yapısı, kurum fiyatları, paket işlem etkisi, özel sigorta farkları ve hizmet gelirlerinin doğru analiz edilmesine yönelik eğitimler sunuyoruz.",
+      items: [
+        "SUT fiyat yapısının okunması",
+        "Hizmet bazlı gelir analizi",
+        "Paket altı ve paket dışı işlem kontrolü",
+        "Gelir kaybı oluşturan kritik noktalar",
+      ],
+    },
+    {
+      icon: Building2,
+      title: "Anlaşmalı Kurum Yönetimi",
+      description:
+        "Özel hastanelerde banka, şirket, kurum, özel sigorta ve tamamlayıcı sağlık sigortası protokollerinin operasyonel ve finansal etkilerini ele alıyoruz.",
+      items: [
+        "Kurum protokol okuma ve yorumlama",
+        "Anlaşmalı kurum fiyat farkları",
+        "Kurum bazlı fatura kontrol süreçleri",
+        "Sözleşme kaynaklı gelir kaybı riskleri",
+      ],
+    },
+    {
+      icon: ShieldCheck,
+      title: "Özel Sağlık Sigortası ve TSS Prosedürleri",
+      description:
+        "ÖSS ve TSS süreçlerinde provizyon, poliçe kontrolü, teminat kapsamı, istisnalar, red nedenleri ve fatura kontrol süreçlerini uygulamalı aktarıyoruz.",
+      items: [
+        "Provizyon alma ve onay kontrolü",
+        "Poliçe, teminat ve istisna değerlendirme",
+        "Red nedenleri ve önleyici kontroller",
+        "Sigorta faturalama disiplininin kurulması",
+      ],
+    },
+    {
+      icon: Calculator,
+      title: "Hekim HUV Katsayı ve Hakediş Eğitimi",
+      description:
+        "Hekim hakediş hesaplama, HUV katsayı mantığı, işlem bazlı gelir paylaşımı, kurum anlaşmalarının hakedişe etkisi ve özel sigorta farklarını örneklerle anlatıyoruz.",
+      items: [
+        "HUV katsayı hesaplama mantığı",
+        "Hekim hakediş modeli oluşturma",
+        "İşlem ve kurum bazlı gelir paylaşımı",
+        "Hakediş kontrol ve mutabakat süreçleri",
+      ],
+    },
   ];
 
   const softwares = [
@@ -95,28 +195,32 @@ export default function Home() {
       title: "Gelir ve Tahakkuk Analizi",
       description:
         "HAS; gelir, tahakkuk, reel fatura, gider ve tıbbi maliyet verilerini tek merkezde analiz ederek kurumun finansal görünürlüğünü artırır.",
-      benefit: "Kayıp gelir alanları, düşük tahakkuk riski ve maliyet baskısı hızlıca tespit edilir.",
+      benefit:
+        "Kayıp gelir alanları, düşük tahakkuk riski ve maliyet baskısı hızlıca tespit edilir.",
     },
     {
       icon: ClipboardCheck,
       title: "SUT / ICD Uyum Kontrolü",
       description:
         "SUT kodu, ICD tanısı, paket işlem, işlem uygunluğu ve faturalama kontrollerini otomatik değerlendirir.",
-      benefit: "Eksik tanı, hatalı işlem, uyumsuz faturalama ve denetim riski azaltılır.",
+      benefit:
+        "Eksik tanı, hatalı işlem, uyumsuz faturalama ve denetim riski azaltılır.",
     },
     {
       icon: Gauge,
       title: "Hekim ve Servis Performansı",
       description:
         "Servis, branş, hekim, işlem, puan ve hasta türü bazında performans göstergelerini yönetilebilir raporlara dönüştürür.",
-      benefit: "Yönetim kararları işlem adedine değil; gelir, gider, verimlilik ve kalite göstergelerine dayanır.",
+      benefit:
+        "Yönetim kararları işlem adedine değil; gelir, gider, verimlilik ve kalite göstergelerine dayanır.",
     },
     {
       icon: AlertTriangle,
       title: "Risk ve Kayıp Gelir Tespiti",
       description:
         "Yüksek tıbbi gider, düşük reel fatura, uzun yatış, paket altı faturalandırma ve gelir-gider uyumsuzluklarını görünür hale getirir.",
-      benefit: "Manuel kontrol yükü azalır, riskli kayıtlar erken fark edilir ve aksiyon alınabilir hale gelir.",
+      benefit:
+        "Manuel kontrol yükü azalır, riskli kayıtlar erken fark edilir ve aksiyon alınabilir hale gelir.",
     },
   ];
 
@@ -204,6 +308,9 @@ export default function Home() {
             <a href="#hizmetler" className="transition hover:text-cyan-300">
               Hizmetlerimiz
             </a>
+            <a href="#egitimler" className="transition hover:text-cyan-300">
+              Eğitimler
+            </a>
             <a href="#yazilimlar" className="transition hover:text-cyan-300">
               Yazılım Çözümümüz
             </a>
@@ -250,8 +357,9 @@ export default function Home() {
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 BBB Danışmanlık; sağlık kurumları için maliyet verimliliği, SUT
-                ve ICD uyumu, performans yönetimi, eğitim ve kurumsal gelişim
-                alanlarında güçlü ve ölçülebilir çözümler sunar.
+                ve ICD uyumu, Medula faturalama, özel sigorta süreçleri, hekim
+                hakediş yönetimi, eğitim ve kurumsal gelişim alanlarında güçlü
+                ve ölçülebilir çözümler sunar.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -263,10 +371,10 @@ export default function Home() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="#iletisim"
+                  href="#egitimler"
                   className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
-                  Hakkımızda / İletişim
+                  Eğitim Programları
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
@@ -358,13 +466,13 @@ export default function Home() {
                 Sağlık sektörüne özel kurumsal çözümler
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                Veriyi yönetime dönüştüren, süreçleri güçlendiren ve
-                sürdürülebilir büyümeyi hedefleyen danışmanlık yaklaşımı
-                sunuyoruz.
+                Veriyi yönetime dönüştüren, süreçleri güçlendiren,
+                faturalama-disiplinini artıran ve sürdürülebilir büyümeyi
+                hedefleyen danışmanlık yaklaşımı sunuyoruz.
               </p>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {services.map((service) => {
                 const Icon = service.icon;
                 return (
@@ -388,7 +496,110 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="yazilimlar" className="relative overflow-hidden bg-slate-50 py-20">
+        <section
+          id="egitimler"
+          className="relative overflow-hidden bg-[#031634] py-20 text-white"
+        >
+          <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl" />
+
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-300">
+                  Eğitim Programlarımız
+                </p>
+                <h2 className="mt-3 text-3xl font-bold md:text-5xl">
+                  Özel hastanelere özel uygulamalı eğitimler
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-slate-300">
+                  Eğitimlerimiz teorik anlatımla sınırlı kalmaz; Medula,
+                  faturalama, özel sigorta, anlaşmalı kurum, SUT, fiyatlandırma
+                  ve hekim hakediş süreçlerini gerçek hastane senaryoları
+                  üzerinden ele alır.
+                </p>
+
+                <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-amber-400 text-white">
+                      <ClipboardList className="h-7 w-7" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">
+                        Eğitimlerin Amacı
+                      </h3>
+                      <p className="mt-3 text-sm leading-7 text-slate-300">
+                        Kurum ekiplerinin faturalama hatalarını azaltmasını,
+                        gelir kayıplarını erken fark etmesini, sigorta ve kurum
+                        süreçlerini doğru yönetmesini, hekim hakedişlerini daha
+                        şeffaf takip etmesini ve finansal kararları veriye
+                        dayalı almasını sağlamaktır.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {[
+                    "Mali işler ekipleri",
+                    "Faturalama birimleri",
+                    "Hasta kabul ekipleri",
+                    "Anlaşmalı kurum ekipleri",
+                    "Yönetim kadroları",
+                    "Hekim hakediş ekipleri",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-100"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2">
+                {educationPrograms.map((program) => {
+                  const Icon = program.icon;
+                  return (
+                    <div
+                      key={program.title}
+                      onMouseMove={handleMouseMove}
+                      onMouseLeave={handleMouseLeave}
+                      className="premium-card rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur transition hover:border-orange-300/40"
+                    >
+                      <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg">
+                        <Icon className="h-7 w-7" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white">
+                        {program.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-7 text-slate-300">
+                        {program.description}
+                      </p>
+
+                      <div className="mt-5 space-y-3">
+                        {program.items.map((item) => (
+                          <div key={item} className="flex gap-3">
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-orange-300" />
+                            <span className="text-sm leading-6 text-slate-200">
+                              {item}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="yazilimlar"
+          className="relative overflow-hidden bg-slate-50 py-20"
+        >
           <div className="absolute left-0 top-16 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
           <div className="absolute bottom-16 right-0 h-72 w-72 rounded-full bg-orange-400/10 blur-3xl" />
 
@@ -444,16 +655,28 @@ export default function Home() {
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-3">
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
-                    <div className="text-2xl font-bold text-blue-700">Gelir</div>
-                    <div className="mt-1 text-xs text-slate-500">Tahakkuk / Fatura</div>
+                    <div className="text-2xl font-bold text-blue-700">
+                      Gelir
+                    </div>
+                    <div className="mt-1 text-xs text-slate-500">
+                      Tahakkuk / Fatura
+                    </div>
                   </div>
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
-                    <div className="text-2xl font-bold text-cyan-700">Uyum</div>
-                    <div className="mt-1 text-xs text-slate-500">SUT / ICD</div>
+                    <div className="text-2xl font-bold text-cyan-700">
+                      Uyum
+                    </div>
+                    <div className="mt-1 text-xs text-slate-500">
+                      SUT / ICD
+                    </div>
                   </div>
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
-                    <div className="text-2xl font-bold text-orange-600">Risk</div>
-                    <div className="mt-1 text-xs text-slate-500">Kayıp Gelir</div>
+                    <div className="text-2xl font-bold text-orange-600">
+                      Risk
+                    </div>
+                    <div className="mt-1 text-xs text-slate-500">
+                      Kayıp Gelir
+                    </div>
                   </div>
                 </div>
 
@@ -491,7 +714,9 @@ export default function Home() {
                       {item.description}
                     </p>
                     <div className="mt-5 rounded-2xl bg-slate-50 p-4 text-sm leading-6 text-slate-700">
-                      <span className="font-semibold text-slate-900">Kuruma faydası: </span>
+                      <span className="font-semibold text-slate-900">
+                        Kuruma faydası:{" "}
+                      </span>
                       {item.benefit}
                     </div>
                   </div>
@@ -511,8 +736,8 @@ export default function Home() {
                 Farkımızı ortaya koyan değerlerimiz
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-300">
-                Sağlıkta veri odaklı düşünme, finansal görünürlük ve süreç
-                iyileştirmeyi aynı çatı altında sunuyoruz.
+                Sağlıkta veri odaklı düşünme, finansal görünürlük, eğitim,
+                yazılım ve süreç iyileştirmeyi aynı çatı altında sunuyoruz.
               </p>
             </div>
 
@@ -576,8 +801,9 @@ export default function Home() {
                 Birlikte büyümeye hazır mısınız?
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                Kurumunuza özel danışmanlık modeli, analiz çözümleri veya eğitim
-                hizmetleri hakkında bilgi almak için bizimle iletişime geçin.
+                Kurumunuza özel danışmanlık modeli, analiz çözümleri, yazılım
+                altyapısı veya eğitim programları hakkında bilgi almak için
+                bizimle iletişime geçin.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -624,8 +850,8 @@ export default function Home() {
                       Hizmet Alanları
                     </div>
                     <div className="mt-1 text-base font-medium text-slate-900">
-                      Sağlık yönetimi, SUT, maliyet verimlilik, eğitim ve süreç
-                      geliştirme
+                      Sağlık yönetimi, SUT, Medula, özel sigorta, faturalama,
+                      eğitim, yazılım ve süreç geliştirme
                     </div>
                   </div>
                 </div>
@@ -654,9 +880,9 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
-              Sağlık kurumları için veriye dayalı danışmanlık, büyüme
-              stratejileri, süreç geliştirme ve performans odaklı çözümler
-              sunuyoruz.
+              Sağlık kurumları için veriye dayalı danışmanlık, eğitim, yazılım,
+              büyüme stratejileri, süreç geliştirme ve performans odaklı
+              çözümler sunuyoruz.
             </p>
           </div>
 
@@ -673,6 +899,11 @@ export default function Home() {
               <div>
                 <a href="#hizmetler" className="hover:text-white">
                   Hizmetlerimiz
+                </a>
+              </div>
+              <div>
+                <a href="#egitimler" className="hover:text-white">
+                  Eğitimler
                 </a>
               </div>
               <div>
