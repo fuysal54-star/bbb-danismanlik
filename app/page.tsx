@@ -406,7 +406,7 @@ export default function Home() {
                 className="premium-card absolute left-6 top-2 z-20 hidden w-52 animate-float rounded-3xl border border-cyan-400/15 bg-[#0a234d]/85 p-4 shadow-2xl backdrop-blur lg:block xl:left-8"
               >
                 <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
-                  Hasta Analitiği
+                  Verimlilik Analizi
                 </div>
                 <div className="mt-3 flex h-20 items-end gap-2">
                   {[40, 60, 50, 72, 66, 84].map((h, i) => (
@@ -817,7 +817,7 @@ export default function Home() {
                   WhatsApp ile İletişime Geç
                 </a>
                 <a
-                  href="mailto:info@bbbdanismanlik.com"
+                  href="mailto:info@bbbdanismanlik.com.tr"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-400 px-6 py-4 text-sm font-semibold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-0.5"
                 >
                   Hızlı Teklif Al
