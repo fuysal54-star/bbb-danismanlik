@@ -610,7 +610,7 @@ export default function Home() {
                   Yazılım Çözümümüz
                 </p>
                 <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
-                  HAS — Hospital Analytics System
+                  HAS — Healthcare Audit & Revenue System
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">
                   Hastane gelir, tahakkuk ve verimlilik süreçlerini analiz eden;
@@ -648,7 +648,7 @@ export default function Home() {
                       HAS
                     </div>
                     <div className="text-2xl font-bold text-slate-900">
-                      Hospital Analytics System
+                      Healthcare Audit & Revenue System
                     </div>
                   </div>
                 </div>
