@@ -300,7 +300,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
           <a href="#anasayfa" className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="BBB Bilişim & Danışmanlık"
               width={72}
               height={72}
@@ -441,7 +441,7 @@ export default function Home() {
                 className="premium-card relative z-10 scale-95 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl"
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo.jpeg"
                   alt="BBB Danışmanlık Logo"
                   width={640}
                   height={640}
@@ -803,7 +803,7 @@ export default function Home() {
             <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl">
               <div className="flex items-center justify-center rounded-[1.5rem] bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.10),transparent_55%)] p-6">
                 <Image
-                  src="/logo.png"
+                  src="/logo.jpeg"
                   alt="BBB Danışmanlık"
                   width={360}
                   height={360}
@@ -885,7 +885,7 @@ export default function Home() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="BBB Logo"
                 width={60}
                 height={60}
