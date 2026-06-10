@@ -301,7 +301,7 @@ export default function Home() {
           <a href="#anasayfa" className="flex items-center gap-3">
             <Image
               src="/logo.png"
-              alt="BBB Danışmanlık"
+              alt="BBB Bilişim & Danışmanlık"
               width={72}
               height={72}
               className="h-14 w-auto"
@@ -309,7 +309,7 @@ export default function Home() {
             />
             <div className="hidden sm:block">
               <div className="text-lg font-bold tracking-wide text-white">
-                BBB Danışmanlık
+                BBB Bilişim & Danışmanlık
               </div>
               <div className="text-xs uppercase tracking-[0.24em] text-cyan-300">
                 Veri • Strateji • Büyüme
@@ -849,7 +849,7 @@ export default function Home() {
                   <div>
                     <div className="text-sm text-slate-500">Firma</div>
                     <div className="mt-1 text-lg font-semibold text-slate-900">
-                      BBB Danışmanlık
+                      BBB Bilişim & Danışmanlık
                     </div>
                   </div>
                   <div>
@@ -892,7 +892,7 @@ export default function Home() {
                 className="h-12 w-auto"
               />
               <div>
-                <div className="text-xl font-bold">BBB Danışmanlık</div>
+                <div className="text-xl font-bold">BBB Bilişim & Danışmanlık</div>
                 <div className="text-xs uppercase tracking-[0.22em] text-cyan-300">
                   Sağlıkta Verimlilik ve Stratejik Dönüşüm
                 </div>
@@ -948,7 +948,7 @@ export default function Home() {
               İletişim
             </div>
             <div className="mt-4 space-y-3 text-sm text-slate-300">
-              <div>0537 648 14 24</div>
+              <div>0 537 648 14 24</div>
               <div>info@bbbdanismanlik.com.tr</div>
               <div>İstanbul, Türkiye</div>
             </div>
@@ -956,7 +956,7 @@ export default function Home() {
         </div>
 
         <div className="border-t border-white/10 px-4 py-5 text-center text-sm text-slate-400 sm:px-6">
-          © 2026 BBB Danışmanlık. Tüm hakları saklıdır.
+          © 2026 BBB Bilişim & Danışmanlık. Tüm hakları saklıdır.
         </div>
       </footer>
     </div>
