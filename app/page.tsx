@@ -192,45 +192,61 @@ export default function Home() {
   const softwares = [
     {
       icon: Database,
-      title: "Gelir ve Tahakkuk Analizi",
+      title: "Gelir, Tahakkuk ve Fatura Denetimi",
       description:
-        "HAS; gelir, tahakkuk, reel fatura, gider ve tıbbi maliyet verilerini tek merkezde analiz ederek kurumun finansal görünürlüğünü artırır.",
+        "Tahakkuk, reel fatura, cari tutar, SGK fatura ve ön-denetim verilerini karşılaştırmalı analiz eder.",
       benefit:
-        "Kayıp gelir alanları, düşük tahakkuk riski ve maliyet baskısı hızlıca tespit edilir.",
+        "Eksik tahakkuk, düşük reel fatura, cari-fatura farkı ve gelir kaybı riski erken tespit edilir.",
     },
     {
       icon: ClipboardCheck,
-      title: "SUT / ICD Uyum Kontrolü",
+      title: "SUT, ICD ve Klinik Uyum Motoru",
       description:
-        "SUT kodu, ICD tanısı, paket işlem, işlem uygunluğu ve faturalama kontrollerini otomatik değerlendirir.",
+        "SUT kodu, ICD tanısı, triyaj bilgisi, paket işlem ve klinik uygunluk kurallarını otomatik kontrol eder.",
       benefit:
-        "Eksik tanı, hatalı işlem, uyumsuz faturalama ve denetim riski azaltılır.",
+        "Tıbbi uygunsuzluk, hatalı kodlama, eksik tanı ve denetim riski azaltılır.",
     },
     {
       icon: Gauge,
-      title: "Hekim ve Servis Performansı",
+      title: "Hekim ve Servis Performans Analitiği",
       description:
-        "Servis, branş, hekim, işlem, puan ve hasta türü bazında performans göstergelerini yönetilebilir raporlara dönüştürür.",
+        "Hekim skoru, performans puanı, zaman analizi, servis maliyeti ve branş karşılaştırmalarını ölçülebilir hale getirir.",
       benefit:
-        "Yönetim kararları işlem adedine değil; gelir, gider, verimlilik ve kalite göstergelerine dayanır.",
+        "Hekim ve servis performansı sadece işlem adediyle değil; gelir, puan, maliyet ve verimlilikle takip edilir.",
     },
     {
       icon: AlertTriangle,
-      title: "Risk ve Kayıp Gelir Tespiti",
+      title: "Risk, Kayıp Gelir ve AI Anomali Tespiti",
       description:
-        "Yüksek tıbbi gider, düşük reel fatura, uzun yatış, paket altı faturalandırma ve gelir-gider uyumsuzluklarını görünür hale getirir.",
+        "Yüksek maliyet, düşük gelir, olağan dışı işlem, tahakkuk kaybı ve fatura uyumsuzluklarını risk seviyesine göre sınıflandırır.",
       benefit:
-        "Manuel kontrol yükü azalır, riskli kayıtlar erken fark edilir ve aksiyon alınabilir hale gelir.",
+        "Denetim ekipleri yüzlerce kayıt içinde kaybolmadan doğrudan riskli alanlara odaklanır.",
+    },
+    {
+      icon: Calculator,
+      title: "Maliyet Simülasyonu ve Kapasite Öngörüsü",
+      description:
+        "Gelir-gider dengesi, tıbbi gider baskısı, kapasite kullanımı ve gelecek dönem performans etkilerini simüle eder.",
+      benefit:
+        "Yönetim kararları geçmiş veriye değil; senaryo, öngörü ve ölçülebilir etkiye dayanır.",
+    },
+    {
+      icon: FileSearch,
+      title: "Kural Motoru ve Kurumsal Kontrol Paneli",
+      description:
+        "SUT dinamik kural motoru, bilgi bankası, kullanıcı yetkileri ve rol bazlı ekranlarla kurumsal kontrol sağlar.",
+      benefit:
+        "Kurum içinde standart kontrol dili oluşur; manuel takip yükü ve kişiye bağımlılık azalır.",
     },
   ];
 
   const softwareBenefits = [
-    "HBYS verilerini sade ve anlaşılır yönetim ekranlarına dönüştürür.",
-    "Gelir kaybı, düşük tahakkuk ve faturalama uyumsuzluklarını erken gösterir.",
-    "Servis ve hekim bazlı performansın ölçülebilir şekilde takip edilmesini sağlar.",
-    "Maliyet, tıbbi gider ve reel fatura dengesini analiz ederek karar desteği sunar.",
-    "Klinik, finans ve yönetim ekipleri arasında ortak veri dili oluşturur.",
-    "Denetim, raporlama ve iç kontrol süreçlerini güçlendirir.",
+    "Gelir, tahakkuk, reel fatura, gider ve tıbbi maliyet verilerini tek ekranda toplar.",
+    "SUT, ICD, triyaj, paket işlem ve SGK fatura kurallarında otomatik uygunluk kontrolü yapar.",
+    "Servis, branş, hekim, işlem ve hasta türü bazında performans göstergeleri üretir.",
+    "Cari tutar, reel fatura, malzeme faturası ve tahakkuk kayıplarını karşılaştırmalı analiz eder.",
+    "AI anomali tespiti ile olağan dışı maliyet, gelir ve işlem hareketlerini erken gösterir.",
+    "Yönetim, finans, klinik ve denetim ekipleri için ortak karar ekranı oluşturur.",
   ];
 
   const reasons = [
@@ -610,13 +626,14 @@ export default function Home() {
                   Yazılım Çözümümüz
                 </p>
                 <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-5xl">
-                  HAS — Healthcare Audit & Revenue System
+                  HAS — Hastane Gelir, Denetim ve Performans Yönetim Platformu
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">
-                  Hastane gelir, tahakkuk ve verimlilik süreçlerini analiz eden;
-                  kayıp gelirleri, faturalama uyumsuzluklarını, maliyet baskısını
-                  ve performans risklerini görünür hale getiren sağlık analitiği
-                  platformudur.
+                  HAS; HBYS, Medula, tahakkuk, fatura, SUT, ICD, hekim
+                  performansı, servis verimliliği ve maliyet verilerini tek
+                  merkezde analiz eden kurumsal sağlık analitiği platformudur.
+                  Gelir kaybını, faturalama uyumsuzluklarını, tıbbi maliyet
+                  baskısını ve operasyonel riskleri erken görünür hale getirir.
                 </p>
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -648,7 +665,7 @@ export default function Home() {
                       HAS
                     </div>
                     <div className="text-2xl font-bold text-slate-900">
-                      Healthcare Audit & Revenue System
+                      Hastane Gelir, Denetim ve Performans Platformu
                     </div>
                   </div>
                 </div>
@@ -656,26 +673,26 @@ export default function Home() {
                 <div className="mt-8 grid gap-4 sm:grid-cols-3">
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
                     <div className="text-2xl font-bold text-blue-700">
-                      Gelir
+                      29+
                     </div>
                     <div className="mt-1 text-xs text-slate-500">
-                      Tahakkuk / Fatura
+                      Analiz Ekranı
                     </div>
                   </div>
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
                     <div className="text-2xl font-bold text-cyan-700">
-                      Uyum
+                      AI
                     </div>
                     <div className="mt-1 text-xs text-slate-500">
-                      SUT / ICD
+                      Anomali Tespiti
                     </div>
                   </div>
                   <div className="rounded-2xl bg-slate-50 p-5 text-center">
                     <div className="text-2xl font-bold text-orange-600">
-                      Risk
+                      SQL
                     </div>
                     <div className="mt-1 text-xs text-slate-500">
-                      Kayıp Gelir
+                      Canlı Veri Altyapısı
                     </div>
                   </div>
                 </div>
@@ -685,16 +702,18 @@ export default function Home() {
                     Platform Amacı
                   </div>
                   <p className="mt-3 text-sm leading-7 text-slate-200">
-                    HAS, HBYS sistemlerinde dağınık halde bulunan verileri
-                    yönetilebilir analizlere dönüştürür. Kurum yöneticilerinin
-                    gelir, gider, faturalama, klinik performans ve operasyonel
-                    verimlilik süreçlerini tek ekrandan takip etmesini sağlar.
+                    HAS, hastane yönetiminin gelir, gider, tahakkuk, fatura,
+                    klinik uyum, hekim performansı, servis verimliliği ve
+                    denetim süreçlerini tek platformdan takip etmesini sağlar.
+                    Dağınık HBYS verilerini anlaşılır analiz ekranlarına
+                    dönüştürür; riskli kayıtları, kayıp gelir alanlarını ve
+                    operasyonel iyileştirme fırsatlarını görünür hale getirir.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {softwares.map((item) => {
                 const Icon = item.icon;
                 return (
