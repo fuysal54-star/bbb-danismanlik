@@ -803,7 +803,7 @@ export default function Home() {
             <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl">
               <div className="flex items-center justify-center rounded-[1.5rem] bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.10),transparent_55%)] p-6">
                 <Image
-                  src="/logo.png"
+                  src="/logo3.png"
                   alt="BBB Danışmanlık"
                   width={360}
                   height={360}
